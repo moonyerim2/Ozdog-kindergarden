@@ -57,10 +57,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  #popup {
-    display: none;
-  }
-
   .contact_wrapper {
     padding: 80px 20px;
   }
