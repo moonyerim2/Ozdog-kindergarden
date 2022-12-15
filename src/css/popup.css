@@ -1,0 +1,25 @@
+#popup {
+  position: absolute;
+  width: 500px;
+  top: 60px;
+  left: 139px;
+}
+
+.popup_image {
+  width: 100%;
+}
+
+.popup_buttons {
+  display: flex;
+}
+
+.popup_button {
+  width: 50%;
+  height: 32px;
+  color: var(--font);
+  border: none;
+}
+
+.popup_button:last-child {
+  border-left: 1px solid var(--font);
+}
