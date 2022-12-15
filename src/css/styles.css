@@ -1,0 +1,18 @@
+:root {
+  --white: #fff;
+  --sky-blue: #c5d9e0;
+  --blue: #6e77e4;
+  --yellow: #ffe366;
+  --light-gray: #ececec;
+  --font: #454444;
+  --fs-h1: 44px;
+  --fs-h2: 36px;
+  --fs-h3: 32px;
+  --fs-h4: 28px;
+  --fs-h5: 24px;
+  --fs-subtitle1: 20px;
+  --fs-subtitle2: 18px;
+  --fs-body1: 16px;
+  --fs-body2: 14px;
+  --fs-caption: 12px;
+}
