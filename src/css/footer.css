@@ -21,6 +21,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .footer_wrapper {
+    padding: 20px;
+  }
+
   .footer_image {
     display: none;
   }
