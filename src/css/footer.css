@@ -19,3 +19,9 @@
   color: var(--font);
   font-size: var(--fs-caption);
 }
+
+@media screen and (max-width: 768px) {
+  .footer_image {
+    display: none;
+  }
+}
