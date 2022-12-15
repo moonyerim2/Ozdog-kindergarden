@@ -1,6 +1,7 @@
 #popup {
   position: absolute;
-  width: 500px;
+  max-width: 500px;
+  min-width: 300px;
   top: 60px;
   left: 139px;
 }
@@ -22,4 +23,11 @@
 
 .popup_button:last-child {
   border-left: 1px solid var(--font);
+}
+
+@media screen and (max-width: 500px) {
+  #popup {
+    width: 100vw;
+    left: 0;
+  }
 }
