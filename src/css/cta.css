@@ -3,11 +3,16 @@
   padding: 0;
   width: 280px;
   height: 40px;
+  padding-top: 0.1em;
   background-color: var(--blue);
   color: var(--white);
   border-radius: 10px;
   border: none;
   transition: left top translate 1s ease-in;
+}
+
+.cta img {
+  margin-top: -0.1em;
 }
 
 .cta-scroll {
