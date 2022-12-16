@@ -44,41 +44,47 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .head-navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 0 10px 0;
-    height: 50px;
-  }
+    .head-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0 10px 0;
+        height: 50px;
+        z-index: 99;
+    }
 
-  .navbar-logo {
-    padding-left: 30px;
-    padding-bottom: 10px;
-  }
+    .navbar-logo {
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
 
-  .navbar-list {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 20px 0 20px 0;
-  }
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 20px 0 20px 0;
+    }
 
-  .navbar-list li {
-    width: 100%;
-    flex-direction: column;
-    padding: 20px 0 20px 0;
-  }
+    .navbar-list li {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-list.nav-active {
+        display: flex;
+    }
 
   .navbar-toggle {
     display: block;
   }
-
-  .navbar-list.active {
-    display: flex;
-  }
 }
+
 /* 
 @media screen and (max-width: 640px) {
     .head-navbar {
