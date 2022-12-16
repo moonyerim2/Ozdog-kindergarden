@@ -27,26 +27,10 @@
   margin-bottom: 60px;
 }
 
-.about-title {
-  font-weight: 600;
-  font-size: var(--fs-h2);
-  color: var(--font);
-}
-
-.about-desc {
-  font-weight: 400;
-  font-size: var(--fs-body2);
-  color: var(--font);
-}
-
 @media screen and (max-width: 768px) {
   .about-size {
     padding: 80px 20px 0;
     height: 600px;
-  }
-
-  .about-title {
-    font-size: var(--fs-h4);
   }
 
   .about-image {

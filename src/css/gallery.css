@@ -8,12 +8,6 @@
   padding: 140px 50px;
 }
 
-.gallery_title {
-  margin-bottom: 10px;
-  font-size: var(--fs-h2);
-  color: var(--font);
-}
-
 .gallery_grid {
   font-size: 0;
   display: flex;
