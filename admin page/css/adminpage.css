@@ -1,0 +1,64 @@
+
+body{
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+    background-color: lightgrey;
+
+}
+
+nav {
+    padding: 20px;
+}
+
+.nav-item{
+    padding-right: 50px;
+}
+
+.con{
+    padding: 50px;
+    text-align: center;
+}
+
+thead{
+    background-color: rgb(237, 237, 237);
+}
+
+
+.table-common>table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table{
+    border:none;
+}
+
+.table-common .btn-box {
+	text-align:center;
+}
+
+.table-common>table th, .table-common>table td {
+	
+	padding: 20px;
+}
+
+.article-list > table th, .article-list > table td {
+    border:none;
+}
+
+.article-list > table td {
+    border-bottom:1px solid lightgray;
+}
+.pagination a{
+    color: black;
+}
+
+.pagination a:hover{
+    color: red;
+}
+.pagination{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
