@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font);
+    
+}
+
+/* 네비게이션바 */
+
+.head-navbar {
+    position: fixed;
+    /* z-index: 1; */
+    width: 100%;
+    height: 60px;
+    padding: 15px 150px 15px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+
+/* .navbar-logo a {
+    padding: 0 20px;
+} */
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    
+}
+
+
+.navbar-list li {
+    padding: 8px 24px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.navbar-toggle {
+    display: none;
+    position: absolute;
+    right: 32px;
+}
+
+
+.about-container {
+    background-color: var(--sky-blue);
+}
+
+.about-size {
+    max-width: 1000px;
+    height: 700px;
+    padding: 140px 50px 0 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    width: 425px;
+    height: 547px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+.about-text {
+    max-width: 500px;
+    margin-bottom: 60px;
+}
+.about-title {
+    font-weight: 600;
+    font-size: var(--fs-h2);
+    color: var(--font);
+}
+
+.about-desc {
+    font-weight: 400;
+    font-size: var(--fs-subtitle2);
+    color: var(--font);
+}
+
+.cta {
+    position: absolute;
+    top: 405px;
+    left: 190px;
+
+}
+
+.cta-btn {
+    width: 280px;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 10px;
+}
+
+.service-container {
+    background-color: var(--light-gray);
+}
+
+.service-text-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 563px;
+    padding: 140px 50px;
+}
+
+.service-title {
+    font-weight: 600;
+    font-size: var(--fs-h2);
+    color: var(--font);
+}
+
+.service-desc {
+    font-weight: 400;
+    font-size: var(--fs-subtitle2);
+    color: var(--font);
+}
+
+.service-info-box {
+    height: 283px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-info {
+    width: 280px;
+    height: 162px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 40px 20px;
+}
+
+.service-info:not(:last-child) {
+    margin-right: 30px;
+}
+
+.service-subtitle {
+    font-weight: 600;
+    font-size: var(--fs-subtitle1);
+    color: var(--font);
+    padding-bottom: 10px;
+}
+
+.service-desc {
+    font-weight: 400;
+    font-size: var(--fs-body2);
+    color: var(--font);
+    letter-spacing: -1px;
+}
+
+@media screen and (max-width: 768px) {
+    .head-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0 10px 0;
+        height: 50px;
+    }
+
+    .navbar-logo {
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 20px 0 20px 0;
+    }
+
+    .navbar-list li {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    .about-image {
+        width: 280px;
+        height: 400px;
+    }
+
+    .cta {
+        position: fixed;
+        background-color: aquamarine;
+        /* margin: 0 20px; */
+    }
+    
+    .cta-btn {
+        width: calc(100% - 40px);
+        height: 40px;
+        color: var(--white);
+        background-color: var(--blue);
+        border: none;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0; 
+        margin: 0 auto 20px;  
+        right: 0;  
+}
+
+    .cta-btn-bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+}
+}
+/* 
+@media screen and (max-width: 640px) {
+    .head-navbar {
+        padding: 15px 40px 15px 45px;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .head-navbar {
+        padding: 15px 10px 15px 15px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .head-navbar {
+        padding: 15px 10px 15px 15px;
+    }
+    .nav-container {
+        width: 100%;
+        font-size: var(--fs-caption);
+        margin: 0;
+    }
+    #navbar-wrap {
+        align-items: center;
+    }
+    #navbar-wrap a {
+        display: block;
+        float: left;
+        padding: 0 12px;
+    }
+    #navbar-wrap ul {
+        margin: 0;
+    }
+} */

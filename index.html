@@ -9,12 +9,84 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="./src/css/styles.css">
   <link rel="stylesheet" href="./src/css/gallery.css">
+  <link rel="stylesheet" href="./src/css/contact.css">
+  <link rel="stylesheet" href="./src/css/footer.css">
+  <link rel="stylesheet" href="./src/css/popup.css">
+  <link rel="stylesheet" href="./src/css/header.css">
+
   <title>오즈독 유치원</title>
 </head>
 
 <body>
-  <script src="./src/js/index.js"></script>
-<!-- 갤러리 -->
+ 
+  <div class="cta cta-btn-bottom">
+      <button class="cta-btn" type="button">지금부터 무료체험 신청하기 
+        <img src="./src/images/arrow.svg">
+      </button>
+  </div>
+  <!-- 네비게이션 바 -->
+  <nav class="head-navbar">
+    <div class="navbar-logo">
+      <a class="navbar-logo-image" href="#">
+        <img src="./src/images/header.svg">
+      </a>
+    </div>
+
+    <ul class="navbar-list">
+      <li class="nav-text">
+        <a href="#" class="nav-link-text">About</a>
+      </li>
+      <li class="nav-text">
+        <a href="#" class="nav-link-text" href="#">Service</a>
+      </li>
+      <li class="nav-text">
+        <a href="#" class="nav-link-text" href="#">Gallery</a>
+      </li>
+      <li class="nav-text">
+        <a href="#" class="nav-link-text">Contact</a>
+      </li>
+    </ul>
+
+    <a href="#" class="navbar-toggle">
+      <img src="./src/images/hamburger.svg">
+    </a>
+  </nav>
+  <!-- About -->
+  <section class="about-container">
+    <div class="about-size">
+      <div class="about-text">
+          <h2 class="about-title">About</h2>
+          <span class="about-desc">오즈독 유치원은 보호자가 반려견과 함께 더 나은 삶을 가꾸어 나가는 것을 최선의 가치로 삼고 있습니다. 언제나 강아지를 먼저 생각하고, 강아지만을 위한 케어를 제공합니다.</span>
+      </div>
+      <div class="about-image">
+        <img src="./src/images/about_image.png">
+      </div>
+    </div>
+  </section>
+  
+  <section class="service-container">
+    <div class="service-text-box">
+      <h2 class="service-title">Service</h2>
+      <span class="service-desc">
+        오즈독 유치원은 다년간의 경험과 노하우를 보유한 전문가들과 함께 최상의 서비스를 제공합니다.
+      </span>
+    <div class="service-info-box">
+      <div class="service-info">
+        <div class="survice-subtitle">유치원</div>
+        <div class="survice-desc">반려견이 매일 정해진 교육 프로그램에 따라 운영되는 프리미엄 유치원 입니다.</div>
+      </div>
+      <div class="service-info">
+        <div class="survice-subtitle">호텔링</div>
+        <div class="survice-desc">최첨단 공조시스템(음압설비)이 적용된 국내 최고의 5성급 호텔 서비스를 제공합니다.</div>
+      </div>
+      <div class="service-info">
+        <div class="survice-subtitle">그루밍</div>
+        <div class="survice-desc">15년 이상 경력의 스타일리스트가 반려견의 컨디션과 피부상태, 모질에 맞게 관리합니다.</div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- 갤러리 -->
 <div class="gallery">
   <div class="gallery_wrapper">
     <p class="gallery_title">Gallery</p>
@@ -65,11 +137,53 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div>  
-    
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </div> 
+  <!--컨택트-->
+  <section id="contact">
+    <div class="contact_wrapper">
+      <h2 class="contact_title">Contact</h2>
+      <p class="contact_description">프로그램 문의 및 서비스 이용에 관하여 문의사항이 있으신가요? 빠른 상담을 위해 연락처를 남겨주세요.</p>
+      <form class="contact_form">
+        <div class="contact_input">
+          <label class="contact_input_label" for="contact_name">보호자 성함</label>
+          <input class="contact_input_field" id="contact_name" type="text">
+        </div>
+        <div class="contact_input">
+          <label class="contact_input_label" for="contact_phone">보호자 번호</label>
+          <input class="contact_input_field" id="contact_phone" type="text">
+        </div>
+        <input class="contact_submit" type="submit" value="보내기">
+      </form>
+    </div>
+  </section>
+  <!--푸터-->
+  <footer id="footer">
+    <div class="footer_wrapper">
+      <div>
+        <p class="footer_text">오즈독 유치원 | 사업자등록번호 : 000-00-12345</p>
+        <p class="footer_text">주소 : 서울 서초구 신사동 192-29</p>
+        <p class="footer_text">이메일 : abcdef@naver.com</p>
+      </div>
+      <div class="footer_image">
+        <img src="./src/images/footer_paw.svg" alt="로고">
+      </div>
+    </div>
+  </footer>
+  <!--이벤트 팝업-->
+  <article id="popup">
+    <img class="popup_image" src="./src/images/event_popup.png" alt="이벤트 배너">
+    <div class="popup_buttons">
+      <button class="popup_button popup_not_oneday" type="button">1일 동안 보지 않음</button>
+      <button class="popup_button popup_close" type="button">닫기</button>
+    </div>
+  </article>
+  <!-- 부트스트랩 cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"></script>
+  <script src="./src/js/index.js"></script>
+  <script src="./src/js/header.js"></script>
+  <script src="./src/js/popup.js"></script>
 </body>
 
 </html>
