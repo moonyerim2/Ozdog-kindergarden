@@ -8,17 +8,6 @@
   padding: 140px 50px;
 }
 
-.service-title {
-  font-size: var(--fs-h2);
-  color: var(--font);
-  margin-bottom: 10px;
-}
-
-.service-desc {
-  font-size: var(--fs-subtitle2);
-  color: var(--font);
-}
-
 .service-info-box {
   display: flex;
   justify-content: center;

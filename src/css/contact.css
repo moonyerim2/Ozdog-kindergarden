@@ -11,17 +11,6 @@
   line-height: 150%;
 }
 
-.contact_title {
-  font-size: var(--fs-h2);
-  margin-bottom: 10px;
-}
-
-.contact_description {
-  font-size: var(--fs-subtitle2);
-  padding-bottom: 30px;
-  margin-bottom: 0;
-}
-
 .contact_form {
   max-width: 400px;
 }

@@ -1,25 +1,24 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: var(--font);
-    
+  text-decoration: none;
+  color: var(--font);
 }
 
 /* 네비게이션바 */
 
 .head-navbar {
-    position: fixed;
-    /* z-index: 1; */
-    width: 100%;
-    height: 60px;
-    padding: 15px 150px 15px 160px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--light-gray);
+  position: fixed;
+  /* z-index: 1; */
+  width: 100%;
+  height: 60px;
+  padding: 15px 150px 15px 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-gray);
 }
 
 /* .navbar-logo a {
@@ -27,64 +26,22 @@ a {
 } */
 
 .navbar-list {
-    display: flex;
-    list-style: none;
-    margin-bottom: 0;
-    
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
 }
-
 
 .navbar-list li {
-    padding: 8px 24px;
-    text-align: center;
-    align-items: center;
+  padding: 8px 24px;
+  text-align: center;
+  align-items: center;
 }
-
 
 .navbar-toggle {
-    display: none;
-    position: absolute;
-    right: 32px;
+  display: none;
+  position: absolute;
+  right: 32px;
 }
-
-
-.about-container {
-    background-color: var(--sky-blue);
-}
-
-.about-size {
-    max-width: 1000px;
-    height: 700px;
-    padding: 140px 50px 0 50px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.about-image {
-    display: flex;
-    justify-content: center;
-    width: 425px;
-    height: 547px;
-    position: absolute;
-    right: 50px;
-    bottom: 0;
-}
-.about-text {
-    max-width: 500px;
-    margin-bottom: 60px;
-}
-.about-title {
-    font-weight: 600;
-    font-size: var(--fs-h2);
-    color: var(--font);
-}
-
-.about-desc {
-    font-weight: 400;
-    font-size: var(--fs-subtitle2);
-    color: var(--font);
-}
-
 
 @media screen and (max-width: 768px) {
     .head-navbar {
@@ -123,12 +80,11 @@ a {
         display: flex;
     }
 
-    .about-image {
-        width: 280px;
-        height: 400px;
-    }
-
+  .navbar-toggle {
+    display: block;
+  }
 }
+
 /* 
 @media screen and (max-width: 640px) {
     .head-navbar {

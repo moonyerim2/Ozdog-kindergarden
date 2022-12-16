@@ -9,7 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/section.css">
+  <link rel="stylesheet" href="./src/css/cta.css">
   <link rel="stylesheet" href="./src/css/header.css">
+  <link rel="stylesheet" href="./src/css/about.css">
   <link rel="stylesheet" href="./src/css/service.css">
   <link rel="stylesheet" href="./src/css/gallery.css">
   <link rel="stylesheet" href="./src/css/contact.css">
@@ -20,12 +23,10 @@
 </head>
 
 <body>
+  <button type="button" class="cta">지금부터 무료체험 신청하기
+    <img src="./src/images/arrow.svg">
+  </button>
 
-  <!-- <div class="cta cta-btn-bottom">
-    <button class="cta-btn" type="button">지금부터 무료체험 신청하기
-      <img src="./src/images/arrow.svg">
-    </button>
-  </div> -->
   <!-- 네비게이션 바 -->
   <nav class="head-navbar">
     <div class="navbar-logo">
@@ -57,8 +58,8 @@
   <section class="about-container">
     <div class="about-size">
       <div class="about-text">
-        <h2 class="about-title">About</h2>
-        <span class="about-desc">오즈독 유치원은 보호자가 반려견과 함께 더 나은 삶을 가꾸어 나가는 것을 최선의 가치로 삼고 있습니다. 언제나 강아지를 먼저 생각하고, 강아지만을 위한
+        <h2 class="section-title">About</h2>
+        <span class="section-desc">오즈독 유치원은 보호자가 반려견과 함께 더 나은 삶을 가꾸어 나가는 것을 최선의 가치로 삼고 있습니다. 언제나 강아지를 먼저 생각하고, 강아지만을 위한
           케어를 제공합니다.</span>
       </div>
       <div class="about-image">
@@ -66,11 +67,11 @@
       </div>
     </div>
   </section>
-
+  <!--서비스-->
   <section class="service-container">
     <div class="service-text-box">
-      <h2 class="service-title">Service</h2>
-      <span class="service-desc">
+      <h2 class="section-title">Service</h2>
+      <span class="section-desc">
         오즈독 유치원은 다년간의 경험과 노하우를 보유한 전문가들과 함께 최상의 서비스를 제공합니다.
       </span>
       <div class="service-info-box">
@@ -92,7 +93,7 @@
   <!-- 갤러리 -->
   <div class="gallery">
     <div class="gallery_wrapper">
-      <p class="gallery_title">Gallery</p>
+      <p class="section-title">Gallery</p>
       <div class="gallery_grid">
         <img src="./src/images/dog-1.jpg">
         <img src="./src/images/dog-2.png">
@@ -178,23 +179,24 @@
           <div class="footer_image">
             <img src="./src/images/footer_paw.svg" alt="로고">
           </div>
-        </div>
-      </footer>
-      <!--이벤트 팝업-->
-      <article id="popup">
-        <img class="popup_image" src="./src/images/event_popup.png" alt="이벤트 배너">
-        <div class="popup_buttons">
-          <button class="popup_button popup_not_oneday" type="button">1일 동안 보지 않음</button>
-          <button class="popup_button popup_close" type="button">닫기</button>
-        </div>
-      </article>
-      <!-- 부트스트랩 cdn -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-      <script src="./src/js/index.js"></script>
-      <script src="./src/js/header.js"></script>
-      <script src="./src/js/popup.js"></script>
+    </div>
+  </footer>
+  <!--이벤트 팝업-->
+  <article id="popup">
+    <img class="popup_image" src="./src/images/event_popup.png" alt="이벤트 배너">
+    <div class="popup_buttons">
+      <button class="popup_button popup_not_oneday" type="button">1일 동안 보지 않음</button>
+      <button class="popup_button popup_close" type="button">닫기</button>
+    </div>
+  </article>
+  <!-- 부트스트랩 cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./src/js/index.js"></script>
+  <script src="./src/js/header.js"></script>
+  <script src="./src/js/popup.js"></script>
+  <script src="./src/js/cta.js"></script>
 </body>
 
 </html>
