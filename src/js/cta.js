@@ -18,8 +18,10 @@ window.addEventListener("resize", () => {
     return;
   }
 
-  cta.style.top = `405px`;
-  cta.style.left = `${left}px`;
+  if (this.scrollY === 0) {
+    cta.style.top = `405px`;
+    cta.style.left = `${left}px`;
+  }
 });
 
 window.addEventListener("scroll", () => {
