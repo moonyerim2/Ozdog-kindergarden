@@ -101,62 +101,6 @@ a {
     border-radius: 10px;
 }
 
-.service-container {
-    background-color: var(--light-gray);
-}
-
-.service-text-box {
-    max-width: 1000px;
-    margin: 0 auto;
-    height: 563px;
-    padding: 140px 50px;
-}
-
-.service-title {
-    font-weight: 600;
-    font-size: var(--fs-h2);
-    color: var(--font);
-}
-
-.service-desc {
-    font-weight: 400;
-    font-size: var(--fs-subtitle2);
-    color: var(--font);
-}
-
-.service-info-box {
-    height: 283px;
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.service-info {
-    width: 280px;
-    height: 162px;
-    background-color: var(--white);
-    border-radius: 20px;
-    padding: 40px 20px;
-}
-
-.service-info:not(:last-child) {
-    margin-right: 30px;
-}
-
-.service-subtitle {
-    font-weight: 600;
-    font-size: var(--fs-subtitle1);
-    color: var(--font);
-    padding-bottom: 10px;
-}
-
-.service-desc {
-    font-weight: 400;
-    font-size: var(--fs-body2);
-    color: var(--font);
-    letter-spacing: -1px;
-}
-
 @media screen and (max-width: 768px) {
     .head-navbar {
         flex-direction: column;
