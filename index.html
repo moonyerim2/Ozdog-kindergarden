@@ -21,11 +21,11 @@
 
 <body>
 
-  <div class="cta cta-btn-bottom">
+  <!-- <div class="cta cta-btn-bottom">
     <button class="cta-btn" type="button">지금부터 무료체험 신청하기
       <img src="./src/images/arrow.svg">
     </button>
-  </div>
+  </div> -->
   <!-- 네비게이션 바 -->
   <nav class="head-navbar">
     <div class="navbar-logo">
@@ -36,20 +36,20 @@
 
     <ul class="navbar-list">
       <li class="nav-text">
-        <a href="#" class="nav-link-text">About</a>
+        <a class="nav-link-text" onclick="goToScroll('about-container')">About</a>
       </li>
       <li class="nav-text">
-        <a href="#" class="nav-link-text" href="#">Service</a>
+        <a class="nav-link-text" onclick="goToScroll('service-container')">Service</a>
       </li>
       <li class="nav-text">
-        <a href="#" class="nav-link-text" href="#">Gallery</a>
+        <a class="nav-link-text"onclick="goToScroll('gallery')">Gallery</a>
       </li>
       <li class="nav-text">
-        <a href="#" class="nav-link-text">Contact</a>
+        <a class="nav-link-text" onclick="goToScroll('contact')">Contact</a>
       </li>
     </ul>
 
-    <a href="#" class="navbar-toggle">
+    <a class="navbar-toggle">
       <img src="./src/images/hamburger.svg">
     </a>
   </nav>
@@ -150,7 +150,7 @@
         </div>
       </div>
       <!--컨택트-->
-      <section id="contact">
+      <section id="contact" class="contact">
         <div class="contact_wrapper">
           <h2 class="contact_title">Contact</h2>
           <p class="contact_description">프로그램 문의 및 서비스 이용에 관하여 문의사항이 있으신가요? 빠른 상담을 위해 연락처를 남겨주세요.</p>
