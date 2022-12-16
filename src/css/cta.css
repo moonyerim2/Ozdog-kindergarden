@@ -1,0 +1,21 @@
+.cta {
+  padding: 0;
+  width: 280px;
+  height: 40px;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 10px;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cta {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    left: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: calc(100% - 40px);
+  }
+}
