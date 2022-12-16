@@ -5,16 +5,16 @@ body {
 a {
     text-decoration: none;
     color: var(--font);
+    
 }
 
 /* 네비게이션바 */
 
 .head-navbar {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
-    height: 30px;
+    position: fixed;
+    /* z-index: 1; */
+    width: 100%;
+    height: 60px;
     padding: 15px 150px 15px 160px;
     display: flex;
     justify-content: space-between;
@@ -29,13 +29,17 @@ a {
 .navbar-list {
     display: flex;
     list-style: none;
+    margin-bottom: 0;
+    
 }
 
 
 .navbar-list li {
     padding: 8px 24px;
     text-align: center;
+    align-items: center;
 }
+
 
 .navbar-toggle {
     display: none;
@@ -66,7 +70,7 @@ a {
     bottom: 0;
 }
 .about-text {
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 60px;
 }
 .about-title {
@@ -81,18 +85,20 @@ a {
     color: var(--font);
 }
 
-.about-box-text .btn {
+.cta {
     position: absolute;
-    top: 345px;
-    width: 280px;
-    height: 40px;
-    background-color: var(--blue);
-    border: none;
+    top: 405px;
+    left: 190px;
+
 }
 
-.btn:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+.cta-btn {
+    width: 280px;
+    height: 40px;
+    color: var(--white);
     background-color: var(--blue);
-    border-color: var(--blue);
+    border: none;
+    border-radius: 10px;
 }
 
 .service-container {
@@ -155,7 +161,13 @@ a {
     .head-navbar {
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px 0 10px 0;
+        height: 50px;
+    }
 
+    .navbar-logo {
+        padding-left: 30px;
+        padding-bottom: 10px;
     }
 
     .navbar-list {
@@ -163,13 +175,14 @@ a {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        background-color: aquamarine;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 20px 0 20px 0;
     }
 
     .navbar-list li {
         width: 100%;
         flex-direction: column;
-
+        padding: 20px 0 20px 0;
     }
 
     .navbar-toggle {
@@ -179,6 +192,40 @@ a {
     .navbar-list.active {
         display: flex;
     }
+
+    .about-image {
+        width: 280px;
+        height: 400px;
+    }
+
+    .cta {
+        position: fixed;
+        background-color: aquamarine;
+        /* margin: 0 20px; */
+    }
+    
+    .cta-btn {
+        width: calc(100% - 40px);
+        height: 40px;
+        color: var(--white);
+        background-color: var(--blue);
+        border: none;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0; 
+        margin: 0 auto 20px;  
+        right: 0;  
+}
+
+    .cta-btn-bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+}
 }
 /* 
 @media screen and (max-width: 640px) {
