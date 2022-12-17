@@ -11,11 +11,13 @@ const handlePopupNotOnday = {
   compareExpireDate: function (name) {
     let now = new Date();
     now = now.setTime(now.getTime());
+    console.log(parseInt(localStorage.getItem(name)), now);
     return parseInt(localStorage.getItem(name)) > now;
   },
 };
 
-if (!handlePopupNotOnday.compareExpireDate(expireDate)) {
+const isExpired = handlePopupNotOnday.compareExpireDate(expireDate);
+if (!isExpired) {
   popup.style.display = "block";
 }
 
