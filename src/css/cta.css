@@ -1,17 +1,32 @@
 .cta {
+  position: absolute;
   padding: 0;
   width: 280px;
   height: 40px;
+  padding-top: 0.1em;
   background-color: var(--blue);
   color: var(--white);
   border-radius: 10px;
   border: none;
 }
 
+.cta img {
+  margin-top: -0.1em;
+}
+
+.cta-scroll {
+  position: fixed;
+  z-index: 1000;
+  top: auto;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
 @media screen and (max-width: 768px) {
   .cta {
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     bottom: 20px;
     left: 20px;
     margin: 0 auto;

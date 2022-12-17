@@ -29,27 +29,29 @@
 
   <!-- 네비게이션 바 -->
   <nav class="head-navbar">
-    <div class="navbar-logo">
-      <a class="navbar-logo-image" href="#">
-        <img src="./src/images/header.svg">
-      </a>
+    <div class="head-navbar-inner">
+      <div class="navbar-logo">
+        <a class="navbar-logo-image" href="#">
+          <img src="./src/images/header.svg">
+        </a>
+      </div>
+      <div class="navbar-list-wrapper">
+        <ul class="navbar-list">
+          <li class="nav-text">
+            <a class="nav-link-text" onclick="goToScroll('about-container')">About</a>
+          </li>
+          <li class="nav-text">
+            <a class="nav-link-text" onclick="goToScroll('service-container')">Service</a>
+          </li>
+          <li class="nav-text">
+            <a class="nav-link-text" onclick="goToScroll('gallery')">Gallery</a>
+          </li>
+          <li class="nav-text">
+            <a class="nav-link-text" onclick="goToScroll('contact')">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <ul class="navbar-list">
-      <li class="nav-text">
-        <a class="nav-link-text" onclick="goToScroll('about-container')">About</a>
-      </li>
-      <li class="nav-text">
-        <a class="nav-link-text" onclick="goToScroll('service-container')">Service</a>
-      </li>
-      <li class="nav-text">
-        <a class="nav-link-text" onclick="goToScroll('gallery')">Gallery</a>
-      </li>
-      <li class="nav-text">
-        <a class="nav-link-text" onclick="goToScroll('contact')">Contact</a>
-      </li>
-    </ul>
-
     <a class="navbar-toggle">
       <img src="./src/images/hamburger.svg">
     </a>
@@ -95,68 +97,80 @@
     <div class="gallery_wrapper">
       <p class="section-title">Gallery</p>
       <div class="gallery_grid">
-        <img src="./src/images/dog-1.jpg">
-        <img src="./src/images/dog-2.png">
-        <img src="./src/images/dog-3.png">
-        <img src="./src/images/dog-4.png">
-        <img src="./src/images/dog-5.png">
-        <img src="./src/images/dog-6.png">
+        <div class="gallery_grid_item">
+          <img src="./src/images/dog-1.jpg">
+        </div>
+        <div class="gallery_grid_item">
+          <img src="./src/images/dog-2.png">
+        </div>
+        <div class="gallery_grid_item">
+          <img src="./src/images/dog-3.png">
+        </div>
+        <div class="gallery_grid_item">
+          <img src="./src/images/dog-4.png">
+        </div>
+        <div class="gallery_grid_item">
+          <img src="./src/images/dog-5.png">
+        </div>
+        <div class="gallery_grid_item">
+          <img src="./src/images/dog-6.png">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="carousel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-          aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-          aria-label="Slide 6"></button>
+    <div class="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/images/dog-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/images/dog-2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/images/dog-3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/images/dog-4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/images/dog-5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/images/dog-6.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./src/images/dog-1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./src/images/dog-2.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./src/images/dog-3.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./src/images/dog-4.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./src/images/dog-5.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./src/images/dog-6.png" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
   <!--컨택트-->
   <section id="contact" class="contact">
     <div class="contact_wrapper">
-      <h2 class="contact_title">Contact</h2>
-      <p class="contact_description">프로그램 문의 및 서비스 이용에 관하여 문의사항이 있으신가요? 빠른 상담을 위해 연락처를 남겨주세요.</p>
+      <h2 class="section-title">Contact</h2>
+      <p class="section-desc">프로그램 문의 및 서비스 이용에 관하여 문의사항이 있으신가요? 빠른 상담을 위해 연락처를 남겨주세요.</p>
       <form class="contact_form">
         <div class="contact_input">
           <label class="contact_input_label" for="contact_name">보호자 성함</label>
