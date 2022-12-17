@@ -8,7 +8,6 @@
   color: var(--white);
   border-radius: 10px;
   border: none;
-  transition: left top translate 1s ease-in;
 }
 
 .cta img {
@@ -17,7 +16,7 @@
 
 .cta-scroll {
   position: fixed;
-  z-index: 9999;
+  z-index: 1000;
   top: auto;
   bottom: 20px;
   left: 50%;
@@ -27,7 +26,7 @@
 @media screen and (max-width: 768px) {
   .cta {
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     bottom: 20px;
     left: 20px;
     margin: 0 auto;
