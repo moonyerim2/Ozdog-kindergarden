@@ -54,8 +54,11 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .head-navbar {
+  .head-navbar-inner{
     padding: 10px 20px;
+  }
+
+  .head-navbar {
     height: 60px;
     display: flex;
     align-items: center;
