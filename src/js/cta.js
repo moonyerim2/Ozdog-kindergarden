@@ -39,3 +39,13 @@ window.addEventListener("scroll", () => {
   cta.style.top = `auto`;
   cta.style.left = `50%`;
 });
+
+function goToContact(name) {
+  const location = document.querySelector("." + name).offsetTop;
+  window.scrollTo({ top: location, behavior: "smooth" });
+}
+
+cta.addEventListener("click", () => {
+  console.log(123);
+  goToContact("contact");
+});
