@@ -18,7 +18,21 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+const tbody = document.querySelector("tbody");
+const tableItemTemplate = (index, name, phone) => `<tr>
+    <td>${index}</td>
+    <td>${name}</td>
+    <td>무료체험 문의</td>
+    <td>없음</td>
+    <td>비회원</td>
+    <td>${phone}</td>
+    <td>2022.11.${6 + index}</td>
+  </tr>`;
+
+let index = 1;
 const querySnapshot = await getDocs(collection(db, "customer_info"));
 querySnapshot.forEach((doc) => {
-  console.log(doc.id, " => ", doc.data());
+  const { name, phone } = doc.data();
+  tbody.insertAdjacentHTML("beforeend", tableItemTemplate(index, name, phone));
+  index++;
 });
