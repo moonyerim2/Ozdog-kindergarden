@@ -52,6 +52,10 @@
     padding: 80px 20px;
   }
 
+  .gallery_grid {
+    display: none;
+  }
+  
   .gallery_wrapper {
     padding: 0;
   }
