@@ -11,7 +11,6 @@ const handlePopupNotOnday = {
   compareExpireDate: function (name) {
     let now = new Date();
     now = now.setTime(now.getTime());
-    console.log(parseInt(localStorage.getItem(name)), now);
     return parseInt(localStorage.getItem(name)) > now;
   },
 };
