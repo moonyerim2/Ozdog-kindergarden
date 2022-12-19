@@ -27,7 +27,7 @@ contactForm.addEventListener("submit", async (e) => {
   const contactName = document.querySelector("#contact_name");
   const contactPhone = document.querySelector("#contact_phone");
 
-  if ((contactName === "") | (contactPhone === "")) return;
+  if ((contactName.value === "") | (contactPhone.value === "")) return;
 
   await setDoc(doc(db, "customer_info", String(uuidv4())), {
     name: contactName.value,
