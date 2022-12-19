@@ -26,8 +26,8 @@
 ![designsistem](/src/images/design_sistem.png)
 
 ### 🍎 팀원 소개
-| <img src="https://avatars.githubusercontent.com/u/75062526?v=4" width="130" height="130" />  | <img src="https://avatars.githubusercontent.com/u/120544822?v=4" width="130" height="130" /> | <img src="https://avatars.githubusercontent.com/u/101456751?v=4" width="130" height="130"/> | 
-| :-----------------------------------------------------------------------------------------:  | :-----------------------------------------------------------------------------------------:  | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------:  |
+| <img src="https://avatars.githubusercontent.com/u/75062526?v=4" width="130" height="130" />  | <img src="https://avatars.githubusercontent.com/u/120544822?v=4" width="130" height="130" /> | <img src="https://avatars.githubusercontent.com/u/101456751?v=4" width="130" height="130"/> |
+| :-----------------------------------------------------------------------------------------:  | :-----------------------------------------------------------------------------------------:  | :----------------------------------------------------------------------------------------: |
 |                                    :full_moon: 문예림                                         |                                 🌼 이승아                                    |                                               🍕 김미성                                            |
 |                [moonyerim2](https://github.com/moonyerim2)                 |                 [leeseung-ah](https://github.com/leeseung-ah)                  |            [kimitt](https://github.com/kimitt)           |    |
 
