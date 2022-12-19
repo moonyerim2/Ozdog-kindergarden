@@ -45,6 +45,41 @@
   border: none;
 }
 
+
+:focus { 
+  outline: none;
+}
+
+.input-container{
+  position: relative;
+} 
+
+input[type="text"] {
+  color: var(--font);
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.effect-1 {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.effect-1~.focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.4s;
+}
+
+.effect-1:focus~.focus-border {
+  width: 100%;
+  background-color: var(--blue);
+  transition: 0.4s;
+}
+
 @media screen and (max-width: 768px) {
   .contact_wrapper {
     padding: 80px 20px;
